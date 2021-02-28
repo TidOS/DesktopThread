@@ -86,7 +86,7 @@ for threads in gen_chan():
         found = True
         break
 
-comment="is this the current desktop thread?"
+comment=""
 if found:    
     browser.get("https://boards.4channel.org/g/thread/" + str(no))
 else:
@@ -96,3 +96,8 @@ else:
 
 browser.find_element_by_id("togglePostFormLink").click()
 browser.find_element_by_name("com").send_keys(comment)
+
+filename = config['top']['scrot-file']
+uploader = browser.find_element_by_name("upfile")
+uploader.send_keys(filename)
+browser.find_element_by_name("post").submit()
