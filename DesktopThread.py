@@ -100,28 +100,59 @@ found = False
 for threads in gen_chan():
     com = get_threads('com')
     no = get_threads('no')
+    #desktop thread search string
     if "desktop thread" in com.lower():
         print("desktop thread found at " + str(no))
         found = True
         break
 
+
+#fill comment field
+#note, the command to capture the screen is above, search for
+#"scrot-command" to find it above
 comment=""
-if found:    
+subject="Desktop Thread"
+#desktop thread was found
+if found:
+    if   args.comment:
+        comment = args.comment
+    else:
+        comment = config['post']['oldthreadcomment']
     browser.get("https://boards.4channel.org/g/thread/" + str(no))
-    comment = "testing"
+    browser.find_element_by_id("togglePostFormLink").click()
+#no desktop thread was found
 else:
     print("no desktop thread found, going to /g/ main page")
     browser.get("https://boards.4channel.org/g/")
-    comment = "this is the new desktop thread"
-
-browser.find_element_by_id("togglePostFormLink").click()
+    browser.find_element_by_id("togglePostFormLink").click()
+    if args.comment:
+        comment = args.comment
+    else:
+        comment = config['post']['newthreadcomment']
+    if args.sub:
+        subject = args.sub
+    else:
+        subject = config['post']['subject']
+    #subject field only available if making new thread
+    browser.find_element_by_name("sub").send_keys(subject)
+#comment field always available so it's outside loop above
 browser.find_element_by_name("com").send_keys(comment)
 
 
+#fill name field
+name="Anonymous"
+if args.name:
+    name = args.name
+else:
+    name = config['post']['name']
+browser.find_element_by_name("name").send_keys(name)
 
+
+
+#fill file field
 print("going to upload" + filename)
 uploader = browser.find_element_by_name("upfile")
 uploader.send_keys(filename)
 
 #IMPORTANT - commented to avoid posting while testing
-browser.find_element_by_name("post").submit()
+#browser.find_element_by_name("post").submit()
