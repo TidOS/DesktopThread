@@ -26,8 +26,9 @@ parser.add_argument("-F", "-f", "--file",    type=str, help="absolute path to fi
 parser.add_argument("-N", "-n", "--name",    type=str, help="Name to use when posting")
 parser.add_argument("-S", "-s", "--sub",     type=str, help="Subject to use if a new thread is made")
 parser.add_argument("-C", "-c", "--comment", type=str, help="Comment to use when posting")
-parser.add_argument("-D", "-d", "--debug",             help="Enable debug messages", action="store_true")
 parser.add_argument("-T", "-t", "--new",               help="Post a new thread even if one exists", action="store_true")
+parser.add_argument("-X", "-x", "--headless",          help="Enable headless mode for webdriver", action="store_true")
+parser.add_argument("-D", "-d", "--debug",             help="Enable debug messages", action="store_true")
 args = parser.parse_args()
 
 messagemode = False
@@ -51,14 +52,17 @@ else:
 
 
 if(config['system']['webdriver'].lower() == "chromedriver"):
-
+    from selenium.webdriver.chrome.options import Options
+    chrome_options = Options()
     if not args.gold:
-        from selenium.webdriver.chrome.options import Options
-        chrome_options = Options()
+        if args.headless or config['system']['headless']:
+            chrome_options.add_argument("--headless")
         chrome_options.add_experimental_option( "prefs",{'profile.managed_default_content_settings.javascript': 2})
         browser = webdriver.Chrome('chromedriver',options=chrome_options)
     else:
-        browser = webdriver.Chrome()
+        if args.headless or config['system']['headless']:
+            chrome_options.add_argument("--headless")
+        browser = webdriver.Chrome('chromedriver',options=chrome_options)
 
 elif config['system']['webdriver'].lower() == "geckodriver":
     from selenium.webdriver.firefox.options import Options
@@ -189,6 +193,5 @@ if not golduser:
 #IMPORTANT - commented to avoid posting while testing
 if messagemode:
     print("posting!")
-else:
-    print("we WOULD be posting")
-    #browser.find_element_by_name("post").submit()
+
+#browser.find_element_by_name("post").submit()
