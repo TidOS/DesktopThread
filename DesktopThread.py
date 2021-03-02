@@ -8,6 +8,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+import time
 import configparser
 import os
 import argparse
@@ -15,7 +16,7 @@ import time
 import requests
 import json
 
-captchatime = 0
+captchatime = 20
 config = configparser.ConfigParser()
 config.read("desktopthread.cfg")
     
@@ -25,13 +26,17 @@ parser.add_argument("-F", "-f", "--file",    type=str, help="absolute path to fi
 parser.add_argument("-N", "-n", "--name",    type=str, help="Name to use when posting")
 parser.add_argument("-S", "-s", "--sub",     type=str, help="Subject to use if a new thread is made")
 parser.add_argument("-C", "-c", "--comment", type=str, help="Comment to use when posting")
-
+parser.add_argument("-D", "-d", "--debug",             help="Enable debug messages", action="store_true")
+parser.add_argument("-T", "-t", "--new",               help="Post a new thread even if one exists", action="store_true")
 args = parser.parse_args()
+
+messagemode = False
+if "y" in config['system']['debug'].lower() or args.debug:
+    messagemode = True
+
 if args.gold:
-    print("gold account usage requested")
-else:
-    #how long to give poster to solve captcha
-    captchatime = 20
+    if messagemode:
+        print("gold account usage requested")
 
 #find our file name
 filename = ""
@@ -46,15 +51,28 @@ else:
 
 
 if(config['system']['webdriver'].lower() == "chromedriver"):
-    browser = webdriver.Chrome()
+
+    if not args.gold:
+        from selenium.webdriver.chrome.options import Options
+        chrome_options = Options()
+        chrome_options.add_experimental_option( "prefs",{'profile.managed_default_content_settings.javascript': 2})
+        browser = webdriver.Chrome('chromedriver',options=chrome_options)
+    else:
+        browser = webdriver.Chrome()
+
 elif config['system']['webdriver'].lower() == "geckodriver":
+    from selenium.webdriver.firefox.options import Options
     browser = webdriver.Firefox()
 else:
     print("incorrect webdriver value in desktopthread.cfg, use chromedriver or geckodriver")
     exit(1)
 
-if args.gold:
-    print("signing into 4chan gold...")
+#4chan gold account sign-in, message if no-gold
+golduser = False
+if args.gold or "y" in config['pass']['gold'].lower():
+    golduser = True
+    if messagemode:
+        print("signing into 4chan gold...")
     browser.get("https://sys.4channel.org/auth")
     token = browser.find_element_by_id("field-id")
     pin = browser.find_element_by_id("field-pin")
@@ -65,22 +83,16 @@ if args.gold:
     #just going to /g/
     timeout = 5
     try:
-        element_present = EC.presence_of_element_located((By.ID, 'logout-form'))
+        element_present = EC.presence_of_element_located((By.CLASS_NAME, 'msg-success'))
         WebDriverWait(browser, timeout).until(element_present)
     except TimeoutException:
         print("Timed out waiting for page to load or login failed?")
 
 #browser.get('https://boards.4chan.org/g')
-print("on /g/, about to look for desktop thread")
+if messagemode:
+    print("on /g/, about to look for desktop thread")
 
-#going to use JSON API instead of this...
-#searchbox = browser.find_element_by_id("search-box")
-#searchbox.send_keys("desktop thread")
-#searchbox.send_keys(Keys.ENTER)
-
-
-
-#load up all posts on board using json api
+#load up all threads on board using json api
 #currently we look for OP posts containing "desktop thread"
 #the first such thread we take as our thread - in the future
 #we could look at all threads that match and choose the best 
@@ -102,7 +114,13 @@ for threads in gen_chan():
     no = get_threads('no')
     #desktop thread search string
     if "desktop thread" in com.lower():
-        print("desktop thread found at " + str(no))
+        if messagemode:
+            if not args.new or "y" in config['post']['forcenewthread'].lower():
+                print("desktop thread found at " + str(no))
+        if args.new or "y" in config['post']['forcenewthread'].lower():
+            if messagemode:
+                print("found a thread but starting a new one anyway")
+            break
         found = True
         break
 
@@ -122,7 +140,9 @@ if found:
     browser.find_element_by_id("togglePostFormLink").click()
 #no desktop thread was found
 else:
-    print("no desktop thread found, going to /g/ main page")
+    if messagemode:
+        if not args.new or "y" in config['post']['forcenewthread'].lower():
+            print("no desktop thread found, going to /g/ main page")
     browser.get("https://boards.4channel.org/g/")
     browser.find_element_by_id("togglePostFormLink").click()
     if args.comment:
@@ -147,12 +167,28 @@ else:
     name = config['post']['name']
 browser.find_element_by_name("name").send_keys(name)
 
-
-
 #fill file field
-print("going to upload" + filename)
+if messagemode:
+    print("going to upload" + filename)
 uploader = browser.find_element_by_name("upfile")
 uploader.send_keys(filename)
 
+#this section waits for an entry in the recaptcha verification box
+#if we're a gold user we skip this and go straight to posting
+if not golduser:
+    if messagemode:
+        print("waiting for captcha response for " + str(captchatime))
+    
+    WebDriverWait(browser, captchatime).until(lambda driver: 
+    browser.find_element_by_xpath("//*[@id=\"g-recaptcha-response\"]").get_attribute("value").strip() != '')
+    
+    if messagemode:
+        print("received key")
+
+
 #IMPORTANT - commented to avoid posting while testing
-#browser.find_element_by_name("post").submit()
+if messagemode:
+    print("posting!")
+else:
+    print("we WOULD be posting")
+    #browser.find_element_by_name("post").submit()
