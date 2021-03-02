@@ -7,7 +7,7 @@ DesktopThread is a python script that uses Selenium to post in desktop threads o
  2. Edit desktopthread.cfg to suit your tastes  
     	 - TODO:  add explanations for options, make configurator
     	 - NOTE:  config file subject to change version to version until the program is "done".  At present, not all options in the config file may be implemented in the script
- 3. Get [chromedriver](https://chromedriver.chromium.org) and make sure it is in your PATH variable
+ 3. Get [chromedriver](https://chromedriver.chromium.org) and make sure it is in your PATH variable, make sure chrome is installed
 	     - I expect to support geckodriver in the future but for now I'm not testing it
 	     - TODO: Possibly automate this sometime - download to current directory and use?
 4. Install the required modules with pip
