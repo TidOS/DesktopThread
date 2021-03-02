@@ -56,11 +56,13 @@ if(config['system']['webdriver'].lower() == "chromedriver"):
     chrome_options = Options()
     if not args.gold:
         if args.headless or config['system']['headless']:
-            chrome_options.add_argument("--headless")
+           print("WARNING: you cannot use headless mode without a gold account")
         chrome_options.add_experimental_option( "prefs",{'profile.managed_default_content_settings.javascript': 2})
         browser = webdriver.Chrome('chromedriver',options=chrome_options)
     else:
         if args.headless or config['system']['headless']:
+            if messagemode:
+                print("headless mode and gold mode")
             chrome_options.add_argument("--headless")
         browser = webdriver.Chrome('chromedriver',options=chrome_options)
 
@@ -194,4 +196,5 @@ if not golduser:
 if messagemode:
     print("posting!")
 
+#uncomment to actually post
 #browser.find_element_by_name("post").submit()
