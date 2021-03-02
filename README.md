@@ -36,3 +36,5 @@ As of now...
     -X, -x, --headless Enable headless mode for webdriver  
     -D, -d, --debug Enable debug messages
 Generally, items in your config file should be overridden by the commandline flags.  If it's not working correctly, set the option in the config file and do not use commandline flag.  Headless mode can only be used when using a 4chan pass.  If you use it without using the "gold" account, the browser will open non-headless so you can solve the captcha.
+
+If using captcha, solve the captcha and paste the verification into the box underneath where it shows you.  The script will post instantly after.
