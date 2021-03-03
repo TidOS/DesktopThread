@@ -8,7 +8,6 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-import time
 import configparser
 import os
 import argparse
@@ -117,9 +116,10 @@ def get_threads(key: str, default='NaN'):
 found = False
 for threads in gen_chan():
     com = get_threads('com')
+    sub = get_threads('sub')
     no = get_threads('no')
     #desktop thread search string
-    if "desktop thread" in com.lower():
+    if "desktop thread" in com.lower()or "desktop thread" in sub.lower():
         if messagemode:
             if not args.new or "y" in config['post']['forcenewthread'].lower():
                 print("desktop thread found at " + str(no))
@@ -198,3 +198,9 @@ if messagemode:
 
 #uncomment to actually post
 #browser.find_element_by_name("post").submit()
+
+#currently will only work if a new thread is found, 
+#TODO:  fix that, just get address from the new thread
+#should be easy
+if "y" in config['system']['openbrowserafterpost'].lower():
+    os.system(config['system']['mybrowserpath'] + " https://boards.4channel.org/g/thread/" + str(no))
