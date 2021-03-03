@@ -197,7 +197,7 @@ if messagemode:
     print("posting!")
 
 #uncomment to actually post
-#browser.find_element_by_name("post").submit()
+browser.find_element_by_name("post").submit()
 
 #currently will only work if a new thread is found, 
 #TODO:  fix that, just get address from the new thread
