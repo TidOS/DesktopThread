@@ -12,7 +12,7 @@ DesktopThread is a python script that uses Selenium to post in desktop threads o
 	 - TODO: Possibly automate this sometime - download to current directory and use?
 4. Install the required modules with pip
 `pip install -r requirements.txt`
-5. Uncomment the last line of the script.  If you don't, nothing will be posted.  Leave it commented while you see if everything is working then uncomment when you're confident you're making the post you mean to make.
+5. Uncomment the line near the end of the script that reads "browser.find_element_by_name("post").submit()" (currently line 199)
 
 # Usage
 As of now...
