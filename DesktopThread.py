@@ -20,6 +20,7 @@ config = configparser.ConfigParser()
 config.read("desktopthread.cfg")
     
 parser = argparse.ArgumentParser(description='Post desktop on /g/')
+parser.add_argument("-I", "-i", "--init",              help="run through initial setup", action=)
 parser.add_argument("-G", "-g", "--gold",              help="sign into 4chan gold", action="store_true")
 parser.add_argument("-F", "-f", "--file",    type=str, help="absolute path to file for upload, overrides config file")
 parser.add_argument("-N", "-n", "--name",    type=str, help="Name to use when posting")
@@ -33,6 +34,51 @@ args = parser.parse_args()
 messagemode = False
 if "y" in config['system']['debug'].lower() or args.debug:
     messagemode = True
+
+
+def makeConfig(passuser = False):
+    ''' Current default config file:
+    [pass]
+    token = yourtoken
+    pin = 123456
+    gold = no
+
+    [system]
+    webdriver = chromedriver
+    headless = no
+    debug = no
+    openbrowserafterpost = no
+    mybrowserpath = /usr/bin/mybrowser
+
+    [top]
+    staticfile = no
+    staticpath = /home/user/desktop.png
+
+    #Linux
+    scrot-cmd = scrot -o ~/desktop.jpg
+    scrot-file = /home/jordan/desktop.jpg
+
+    #OS X
+    #scrot-cmd = screencapture ~/post.jpg
+    #scrot-file = /Users/user/post.jpg
+
+    [post]
+    commentfromcmd = no
+    commentcmd = fortune
+
+    newthreadcomment = Did not see a desktop thread, so this is the new desktop thread
+    subject = desktop thread
+    oldthreadcomment = Is this the current desktop thread?
+    name = desktop thread lover
+    forcenewthread = no
+    '''
+    if passuser:
+        print("here we ask for pass info")
+    else:
+        print("not a pass user")
+
+#makeConfig()
+
 
 if args.gold:
     if messagemode:
@@ -141,7 +187,12 @@ if found:
     if   args.comment:
         comment = args.comment
     else:
-        comment = config['post']['oldthreadcomment']
+        if "y" in config['post']['commentfromcmd'].lower():
+            comment = os.system(config['post']['commentcmd'])
+            if messagemode:
+                print("comment from command is: " + comment)
+        else:
+            comment = config['post']['oldthreadcomment']
     browser.get("https://boards.4channel.org/g/thread/" + str(no))
     browser.find_element_by_id("togglePostFormLink").click()
 #no desktop thread was found
