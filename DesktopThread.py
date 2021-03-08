@@ -20,7 +20,7 @@ config = configparser.ConfigParser()
 config.read("desktopthread.cfg")
     
 parser = argparse.ArgumentParser(description='Post desktop on /g/')
-parser.add_argument("-I", "-i", "--init",              help="run through initial setup", action=)
+#parser.add_argument("-I", "-i", "--init",              help="run through initial setup", action=)
 parser.add_argument("-G", "-g", "--gold",              help="sign into 4chan gold", action="store_true")
 parser.add_argument("-F", "-f", "--file",    type=str, help="absolute path to file for upload, overrides config file")
 parser.add_argument("-N", "-n", "--name",    type=str, help="Name to use when posting")
@@ -247,7 +247,7 @@ if messagemode:
     print("posting!")
 
 #uncomment to actually post
-#browser.find_element_by_name("post").submit()
+browser.find_element_by_name("post").submit()
 
 #currently will only work if a new thread is found, 
 #TODO:  fix that, just get address from the new thread
