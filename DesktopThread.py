@@ -35,6 +35,15 @@ messagemode = False
 if "y" in config['system']['debug'].lower() or args.debug:
     messagemode = True
 
+#load up all threads on board using json api
+#currently we look for OP posts containing "desktop thread"
+#the first such thread we take as our thread - in the future
+#we could look at all threads that match and choose the best 
+#one based on current replies (is one about to die or was the
+# one we found started prematurely?)
+global r
+r = requests.get('https://a.4cdn.org/g/catalog.json')
+r = r.json()
 
 def makeConfig(passuser = False):
     ''' Current default config file:
@@ -99,7 +108,7 @@ else:
 if(config['system']['webdriver'].lower() == "chromedriver"):
     from selenium.webdriver.chrome.options import Options
     chrome_options = Options()
-    if not args.gold:
+    if not args.gold and not config['pass']['gold']:
         if args.headless or config['system']['headless']:
            print("WARNING: you cannot use headless mode without a gold account")
         chrome_options.add_experimental_option( "prefs",{'profile.managed_default_content_settings.javascript': 2})
@@ -143,16 +152,11 @@ if args.gold or "y" in config['pass']['gold'].lower():
 if messagemode:
     print("on /g/, about to look for desktop thread")
 
-#load up all threads on board using json api
-#currently we look for OP posts containing "desktop thread"
-#the first such thread we take as our thread - in the future
-#we could look at all threads that match and choose the best 
-#one based on current replies (is one about to die or was the
-# one we found started prematurely?)
-r = requests.get('https://a.4cdn.org/g/catalog.json')
-r = r.json()
 
 def gen_chan():
+    global r
+    r = requests.get('https://a.4cdn.org/g/catalog.json')
+    r = r.json()
     for idx, page in enumerate(r):
         for thread in r[idx]['threads']:
             yield thread
@@ -215,7 +219,6 @@ else:
 #comment field always available so it's outside loop above
 browser.find_element_by_name("com").send_keys(comment)
 
-
 #fill name field
 name="Anonymous"
 if args.name:
@@ -248,6 +251,8 @@ if messagemode:
 
 #uncomment to actually post
 browser.find_element_by_name("post").submit()
+#print("fakepost")
+browser.close()
 
 #currently will only work if a new thread is found, 
 #TODO:  fix that, just get address from the new thread
