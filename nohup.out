@@ -1,0 +1,324 @@
+ATTENTION: default value of option vblank_mode overridden by environment.
+kf.plasma.quick: Applet preload policy set to 1
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+Loading Calendar plugin PimEventsPlugin(0x55cea5338a10)
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:478:17: QML ToolButton: Binding loop detected for property "icon.height"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:466:17: QML ToolButton: Binding loop detected for property "icon.height"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:457:17: QML ToolButton: Binding loop detected for property "icon.height"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:445:17: QML ToolButton: Binding loop detected for property "icon.height"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:424:17: QML ToolButton: Binding loop detected for property "icon.height"
+trying to show an empty dialog
+file:///usr/lib/qt/qml/org/kde/plasma/components.3/TabBar.qml:20: TypeError: Cannot read property 'implicitWidth' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:47: TypeError: Cannot read property 'CanSeek' of undefined
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:45: TypeError: Cannot read property 'Rate' of undefined
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:44: TypeError: Cannot read property 'Position' of undefined
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:207: TypeError: Cannot read property 'Desktop Icon Name' of undefined
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:223: TypeError: Cannot read property 'Desktop Icon Name' of undefined
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+Plasma Shell startup completed
+Plasma Shell startup completed
+Plasma Shell startup completed
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+file:///usr/lib/qt/qml/org/kde/plasma/components/ModelContextMenu.qml:38:1: QML ModelContextMenu: Accessible must be attached to an Item
+trying to show an empty dialog
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.kdeconnect.mpris_9886049b545f4976b0af0c9839c588ea" does not implement org.freedesktop.DBus.Properties correctly Error message was "org.freedesktop.DBus.Error.ServiceUnknown" "The name org.mpris.MediaPlayer2.kdeconnect.mpris_9886049b545f4976b0af0c9839c588ea was not provided by any .service files"
+kde.dataengine.mpris: Failed to find working MPRIS2 interface for "org.mpris.MediaPlayer2.kdeconnect.mpris_9886049b545f4976b0af0c9839c588ea"
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.kdeconnect.mpris_174b7544b584437cb290408adb9f1c37" does not implement org.freedesktop.DBus.Properties correctly Error message was "org.freedesktop.DBus.Error.ServiceUnknown" "The name org.mpris.MediaPlayer2.kdeconnect.mpris_174b7544b584437cb290408adb9f1c37 was not provided by any .service files"
+kde.dataengine.mpris: Failed to find working MPRIS2 interface for "org.mpris.MediaPlayer2.kdeconnect.mpris_174b7544b584437cb290408adb9f1c37"
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.kdeconnect.mpris_02d90e22b6ae4102bf5990a5d2f4da06" does not implement org.freedesktop.DBus.Properties correctly Error message was "org.freedesktop.DBus.Error.ServiceUnknown" "The name org.mpris.MediaPlayer2.kdeconnect.mpris_02d90e22b6ae4102bf5990a5d2f4da06 was not provided by any .service files"
+kde.dataengine.mpris: Failed to find working MPRIS2 interface for "org.mpris.MediaPlayer2.kdeconnect.mpris_02d90e22b6ae4102bf5990a5d2f4da06"
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.plasma-browser-integration" does not implement org.freedesktop.DBus.Properties correctly
+QQmlEngine::setContextForObject(): Object already has a QQmlContext
+QQmlEngine::setContextForObject(): Object already has a QQmlContext
+QCoreApplication::postEvent: Unexpected null receiver
+file:///usr/lib/qt/qml/org/kde/newstuff/qml/QuestionAsker.qml:91:5: QML Connections: Cannot assign to non-existent property "onClosing"
+file:///usr/lib/qt/qml/org/kde/kirigami.2/private/globaltoolbar/PageRowGlobalToolBarUI.qml:65:9: QML RowLayout (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "maximumWidth"
+file:///usr/lib/qt/qml/org/kde/kirigami.2/private/globaltoolbar/PageRowGlobalToolBarUI.qml:65:9: QML RowLayout (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "maximumWidth"
+QCoreApplication::postEvent: Unexpected null receiver
+file:///usr/lib/qt/qml/org/kde/newstuff/qml/QuestionAsker.qml:91:5: QML Connections: Cannot assign to non-existent property "onClosing"
+file:///usr/lib/qt/qml/org/kde/kirigami.2/private/globaltoolbar/PageRowGlobalToolBarUI.qml:65:9: QML RowLayout (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "maximumWidth"
+file:///usr/lib/qt/qml/org/kde/kirigami.2/private/globaltoolbar/PageRowGlobalToolBarUI.qml:65:9: QML RowLayout (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "maximumWidth"
+file:///usr/lib/qt/qml/org/kde/kirigami.2/FormLayout.qml:305:9: QML QQuickItem* (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "preferredWidth"
+file:///usr/lib/qt/qml/org/kde/kcm/SettingHighlighter.qml:0: ReferenceError: kcm is not defined
+file:///usr/lib/qt/qml/org/kde/kcm/SettingHighlighter.qml:0: ReferenceError: kcm is not defined
+file:///usr/lib/qt/qml/org/kde/kcm/SettingHighlighter.qml:37: ReferenceError: kcm is not defined
+file:///usr/lib/qt/qml/org/kde/kcm/SettingHighlighter.qml:37: ReferenceError: kcm is not defined
+file:///usr/lib/qt/qml/org/kde/kcm/SettingHighlighter.qml:37: ReferenceError: kcm is not defined
+file:///usr/lib/qt/qml/org/kde/kirigami.2/AbstractApplicationItem.qml:94: TypeError: Cannot read property 'position' of null
+file:///usr/lib/qt/qml/org/kde/kirigami.2/AbstractApplicationItem.qml:93: TypeError: Cannot read property 'background' of null
+file:///usr/lib/qt/qml/org/kde/newstuff/qml/Page.qml:130: TypeError: Cannot read property 'useLabel' of null
+file:///usr/lib/qt/qml/org/kde/kcm/AbstractKCM.qml:38: ReferenceError: kcm is not defined
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/configuration/ConfigurationContainmentAppearance.qml:88:13: Unable to assign [undefined] to QQmlListProperty<QQuickItem>
+file:///usr/lib/qt/qml/org/kde/kirigami.2/AbstractApplicationItem.qml:94: TypeError: Cannot read property 'position' of null
+file:///usr/lib/qt/qml/org/kde/kirigami.2/AbstractApplicationItem.qml:93: TypeError: Cannot read property 'background' of null
+file:///usr/lib/qt/qml/org/kde/newstuff/qml/Page.qml:130: TypeError: Cannot read property 'useLabel' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:28:1: QML StackView: Binding loop detected for property "configuredImage"
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5334
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5332
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5326
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5328
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5334
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5332
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5326
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5328
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5334
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5332
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5326
+qt.svg: <input>:1377: Could not resolve property: #linearGradient5328
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:146:19: QML Loader: Binding loop detected for property "height"
+trying to show an empty dialog
+qt.svg: <input>:406:376: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:407:130: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:408:130: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:408:393: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:409:130: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:410:129: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:411:129: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:412:129: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:413:129: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:413:379: Could not add child element to parent element because the types are incorrect.
+qt.svg: <input>:413:631: Could not add child element to parent element because the types are incorrect.
+trying to show an empty dialog
+trying to show an empty dialog
+trying to show an empty dialog
+trying to show an empty dialog
+trying to show an empty dialog
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.plasma-browser-integration" does not implement org.freedesktop.DBus.Properties correctly
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.kdeconnect.mpris_26257f3130924f418c524b419ef7c28f" does not implement org.freedesktop.DBus.Properties correctly Error message was "org.freedesktop.DBus.Error.ServiceUnknown" "The name org.mpris.MediaPlayer2.kdeconnect.mpris_26257f3130924f418c524b419ef7c28f was not provided by any .service files"
+kde.dataengine.mpris: Failed to find working MPRIS2 interface for "org.mpris.MediaPlayer2.kdeconnect.mpris_26257f3130924f418c524b419ef7c28f"
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+kde.dataengine.mpris: "org.mpris.MediaPlayer2.kdeconnect.mpris_63dc66cc68204968ac673588210a67bc" does not implement org.freedesktop.DBus.Properties correctly Error message was "org.freedesktop.DBus.Error.ServiceUnknown" "The name org.mpris.MediaPlayer2.kdeconnect.mpris_63dc66cc68204968ac673588210a67bc was not provided by any .service files"
+kde.dataengine.mpris: Failed to find working MPRIS2 interface for "org.mpris.MediaPlayer2.kdeconnect.mpris_63dc66cc68204968ac673588210a67bc"
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+qml: OpenWeatherMap.fetchDailyWeatherForecast
+qml: OpenWeatherMap.fetchHourlyWeatherForecast
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:188:17: QML Image: klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'.
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:137:9: QML Image: klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'.
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] Error when using refreshToken: HTTP Error 0:  
+qml: XMLHttpRequest.onerror undefined
+qml: [eventcalendar] Error when using refreshToken: XMLHttpRequest.onerror(undefined) undefined
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] Error when using refreshToken: HTTP Error 0:  
+qml: XMLHttpRequest.onerror undefined
+qml: [eventcalendar] Error when using refreshToken: XMLHttpRequest.onerror(undefined) undefined
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] onErrorFetchingEvents:  HTTP Error 0: 
+qml: XMLHttpRequest.onerror undefined
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleCalendarManager.qml:202: TypeError: Value is undefined and could not be converted to an object
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] onErrorFetchingEvents:  HTTP Error 0: 
+qml: XMLHttpRequest.onerror undefined
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleCalendarManager.qml:202: TypeError: Value is undefined and could not be converted to an object
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] Error when using refreshToken: HTTP Error 0:  
+qml: XMLHttpRequest.onerror undefined
+qml: [eventcalendar] Error when using refreshToken: XMLHttpRequest.onerror(undefined) undefined
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] Error when using refreshToken: HTTP Error 0:  
+qml: XMLHttpRequest.onerror undefined
+qml: [eventcalendar] Error when using refreshToken: XMLHttpRequest.onerror(undefined) undefined
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] onErrorFetchingEvents:  HTTP Error 0: 
+qml: XMLHttpRequest.onerror undefined
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleCalendarManager.qml:202: TypeError: Value is undefined and could not be converted to an object
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+qml: HTTP 0 Headers: 
+
+qml: [eventcalendar] onErrorFetchingEvents:  HTTP Error 0: 
+qml: XMLHttpRequest.onerror undefined
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleCalendarManager.qml:202: TypeError: Value is undefined and could not be converted to an object
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:188:17: QML Image: klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'.
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:137:9: QML Image: klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'.
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'."
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:137:9: QML Image: klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'.
+file:///usr/share/plasma/plasmoids/org.kde.plasma.mediacontroller/contents/ui/ExpandedRepresentation.qml:188:17: QML Image: klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/http.so'.
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/desktop.so'."
+kf.kio.core: couldn't create slave: "klauncher said: Error loading '/usr/lib/qt/plugins/kf5/kio/desktop.so'."
+QObject::disconnect: Unexpected nullptr parameter
+QObject::disconnect: Unexpected nullptr parameter
+QObject::disconnect: Unexpected nullptr parameter
+QObject::disconnect: Unexpected nullptr parameter
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:222: TypeError: Cannot call method 'globalAction' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:211: TypeError: Cannot call method 'action' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:205: TypeError: Cannot call method 'action' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:33: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:46: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:47: TypeError: Cannot read property 'editMode' of null
+trying to show an empty dialog
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:75: TypeError: Cannot read property 'pluginName' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:77: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:78: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:79: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:80: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:32: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:33: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:34: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:35: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/main.qml:196: TypeError: Cannot read property 'location' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:160: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:29: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:121: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:108: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleTasksManager.qml:24: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleCalendarManager.qml:17: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleApiSession.qml:8: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimerModel.qml:8: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimerModel.qml:9: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimerModel.qml:10: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimeModel.qml:12: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/main.qml:18: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:10: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:30: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:31: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:32: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:36: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:37: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:38: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:42: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:45: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:46: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:48: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:52: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/lib/Base64Json.qml:5: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/lib/Base64Json.qml:5: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:68: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:70: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:71: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:75: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:76: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:78: TypeError: Cannot read property 'configuration' of null
+file:///home/jordan/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TooltipView.qml:114: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.colorpicker/contents/ui/main.qml:28: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.colorpicker/contents/ui/main.qml:29: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.colorpicker/contents/ui/main.qml:68: TypeError: Cannot read property 'title' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.colorpicker/contents/ui/main.qml:26: TypeError: Cannot read property 'formFactor' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:222: TypeError: Cannot read property 'globalAction' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:211: TypeError: Cannot read property 'action' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:205: TypeError: Cannot read property 'action' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:33: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:46: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:47: TypeError: Cannot read property 'editMode' of null
+trying to show an empty dialog
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:75: TypeError: Cannot read property 'pluginName' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:77: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:78: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:79: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:80: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:32: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:33: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:34: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:35: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:180: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:173: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:121: TypeError: Cannot read property 'x' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:135: TypeError: Cannot read property 'y' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:121: TypeError: Cannot read property 'x' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:135: TypeError: Cannot read property 'y' of null
