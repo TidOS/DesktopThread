@@ -21,8 +21,6 @@ from fuzzywuzzy import process
 def match(comment):
     matchscore = fuzz.partial_ratio("desktop thread", comment)
     if matchscore > 85:
-        print("comment: " + comment + " looks like a desktop thread")
-        print("score is " + str(matchscore))
         return True
     return False
 
@@ -182,7 +180,7 @@ for threads in gen_chan():
     no = get_threads('no')
     #desktop thread search string
 #    if "desktop threa" in com.lower()or "desktop threa" in sub.lower() or "desktop brea" in com.lower() or "desktop brea" in sub.lower():
-	if match(com.lower()) or match(sub.lower()):
+    if match(com.lower()) or match(sub.lower()):
         if messagemode:
             if not args.new or "y" in config['post']['forcenewthread'].lower():
                 print("desktop thread found at " + str(no))
